@@ -11,7 +11,7 @@ import "./index.css";
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
-            staleTime: 1 * 60 * 1000,
+            staleTime: 24 * 60 * 60 * 1000, // 24hours
         },
     },
 });
