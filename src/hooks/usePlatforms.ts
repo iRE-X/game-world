@@ -10,8 +10,6 @@ export interface Platform {
 
 const apiClient = new APIClient<Platform>("platforms/lists/parents");
 
-// const usePlatforms = () => ({ data: platforms, isLoading: false, error: null });
-
 const usePlatforms = () => {
     return useQuery<Platform[], Error>({
         queryKey: ["platforms"],
@@ -21,5 +19,3 @@ const usePlatforms = () => {
 };
 
 export default usePlatforms;
-
-// useData<Platform>("/platforms/lists/parents")

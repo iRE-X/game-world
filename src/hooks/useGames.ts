@@ -27,7 +27,7 @@ const useGames = (gameQuery: GameQuery) => {
                     page: pageParam,
                 },
             }),
-        initialPageParam: 1, // 1hour
+        initialPageParam: 1,
         getNextPageParam: (lastpage, allpages) => {
             return lastpage.length ? allpages.length + 1 : undefined;
         },

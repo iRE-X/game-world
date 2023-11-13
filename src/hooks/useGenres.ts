@@ -10,8 +10,6 @@ export interface Genre {
 
 const apiClient = new APIClient<Genre>("/genres");
 
-// const useGenres = () => ({ data: genres, isLoading: false, error: null });
-
 const useGenres = () => {
     return useQuery<Genre[], Error>({
         queryKey: ["genres"],
