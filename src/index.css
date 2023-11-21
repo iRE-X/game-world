@@ -1,10 +1,14 @@
 #root {
     max-width: 95%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
     /* text-align: center; */
 }
 
 form {
     width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
 }
