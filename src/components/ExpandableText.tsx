@@ -17,7 +17,7 @@ const ExpandableText = ({ children, limit = 300 }: Props) => {
 
     return (
         <div>
-            <Text>
+            <Text textAlign="justify">
                 {summary}
                 <Button
                     onClick={() => setExpanded(!expanded)}
